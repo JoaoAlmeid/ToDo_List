@@ -1,0 +1,99 @@
+body {
+  overflow-x: hidden;
+  background-color: #212121;
+  color: #fff;
+}
+
+.App {
+  text-align: center;
+}
+
+header {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h2 {
+  margin: 4% 0;
+}
+.logoN3 {
+  background-image: url(../public/Logo-N3.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40%; height: 10%;
+  position: absolute;
+  left: 2%;
+}
+
+.taskBg {
+  background-color: #555;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  padding: 10px 140px 10px 15px;
+  text-align: left;
+  font-size: 22px;
+  position: relative;
+}
+
+.taskBg div {
+  display: flex;
+  align-items: center;
+}
+
+.taskNumber {
+  color: #999;
+  border: 1px solid #999;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  text-align: center;
+  font-size: 14px;
+  margin-right: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskBg .taskText {
+  flex: 1;
+}
+
+.taskBg .done .taskText {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.taskBg .iconsWrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: auto;
+  display: inline-block;
+}
+
+.taskBg .iconsWrap span {
+  display: inline-block;
+  margin: 0px 10px 0 10px;
+  cursor: pointer;
+  color: #00ff89;
+}
+
+.taskBg .iconsWrap span:hover {
+  color: yellow;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+@media screen and (max-width: 720px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .col-auto {
+    display: flex;
+    margin: 10px auto 0;
+  }
+}
